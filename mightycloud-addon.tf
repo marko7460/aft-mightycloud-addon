@@ -90,7 +90,7 @@ resource "aws_iam_role_policy_attachment" "mightycloud-oidc-policy-attachment" {
 
 data "aws_iam_policy_document" "mightycloud-policy-definition" {
   statement {
-    sid       = "XoofigyAFTRoleAssume"
+    sid       = "MightyCloudAFTRoleAssume"
     effect    = "Allow"
     actions   = ["sts:AssumeRole"]
     resources = ["arn:aws:iam::*:role/AWSAFTAdmin"]
